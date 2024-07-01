@@ -1,6 +1,6 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaWordpress, FaPython, FaShopify } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -8,7 +8,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit, Natus veritatis Delectus.",
+  description: "I have over 5+ years of experience as a software developer, proficient in many languages and technologies. I've contributed to many projects or solved complex problems with elegant solutions.",
   items: [
     {
       company: "Tech Solution Inc.",
@@ -47,10 +47,10 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit, Natus veritatis Delectus.",
+  description: "I hold a Associate Degree in Computer Science from Community College, where I gained a solid foundation in software development principles and practices. My education includes coursework and hands-on projects that prepared me for real-world challenges in the tech industry.",
   items: [
     {
-      institution: "Online Course Platform",
+      institution: "Coursera",
       degree: "Full Stack Web Development Bootcamp",
       duration: "2023",
     },
@@ -60,7 +60,7 @@ const education = {
       duration: "2022",
     },
     {
-      institution: "Online Course",
+      institution: "W3Schools",
       degree: "Programming Course",
       duration: "2020 - 2021",
     },
@@ -85,7 +85,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit, Natus veritatis Delectus.",
+  description: "I'm proficient in multiple programming languages such as Python and JavaScript, with expertise in web development frameworks like Django and React. My skills also include database management, API integration, and a strong grasp of software architecture and design patterns.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -102,6 +102,18 @@ const skills = {
     {
       icon: <FaReact />,
       name: "react.js",
+    },
+    {
+      icon: <FaWordpress />,
+      name: "wordpress",
+    },
+    {
+      icon: <FaPython />,
+      name: "python",
+    },
+    {
+      icon: <FaShopify />,
+      name: "shopify",
     },
     {
       icon: <SiNextdotjs />,
@@ -125,31 +137,23 @@ const skills = {
 // about data
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit, Natus veritatis Delectus.",
+  description: "I'm a passionate software developer dedicated to crafting efficient, scalable solutions that solve real-world problems. With a strong focus on continuous learning and innovation.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "RaDin-Alvi",
+      fieldValue: "RaDin Adwell",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "(+92) 313 3141328",
+      fieldName: "Email",
+      fieldValue: "radinofficial15@gmail.com",
     },
     {
       fieldName: "Experience",
       fieldValue: "5+ Years",
     },
     {
-      fieldName: "Snapchat",
-      fieldValue: "RaDin.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Pakistan",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "abuzaralvi15@gmail.com",
+      fieldName: "Github",
+      fieldValue: "RaDins-18",
     },
     {
       fieldName: "Freelance",
@@ -157,7 +161,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, French",
+      fieldValue: "English",
     },
   ]
 };

@@ -7,26 +7,38 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
-    href: '',
+    description: 'Dynamic responsive websites using HTML, CSS, JavaScript, and ReactJS, NodeJS, and NextJS. Ensuring smooth, fast, catchy, and interactive user experiences.',
+    href: 'https://github.com/RaDins-18/Popular-Websites-Clone',
   },
   {
     num: '02',
-    title: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
-    href: '',
+    title: 'Wordpress Development',
+    description: 'Specializing in custom themes, plugins, and responsive design. Optimizing site performance, user-friendly navigation, and implementing SEO.',
+    href: 'https://wordpress.com/',
   },
   {
     num: '03',
-    title: 'Logo Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
-    href: '',
+    title: 'Python Programs',
+    description: 'Building robust error free applications and automating tasks. Web development with Flask, and crafting efficient, readable code.',
+    href: 'https://github.com/RaDins-18/Games-Using-Python',
   },
   {
     num: '04',
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
-    href: '',
+    title: 'Shopify Development',
+    description: 'Specializing in custom themes, app integrations, and e-commerce optimization. Creating user-friendly online stores that enhance customer experiences.',
+    href: 'https://shopify.com/',
+  },
+  {
+    num: '05',
+    title: 'Logo Design',
+    description: 'Creating memorable, visually striking logos. Excel at blending creativity with brand identity to deliver unique, impactful designs that stand out.',
+    href: 'https://www.bigcommerce.com/glossary/what-is-a-logo-design/',
+  },
+  {
+    num: '06',
+    title: 'UI/UX Design',
+    description: 'Specializing in crafting intuitive and engaging user interfaces. Research, wireframing, and prototyping to create seamless digital experiences.',
+    href: 'https://github.com/RaDins-18/Front-End-Web-Projects',
   },
 ];
 
@@ -55,7 +67,7 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link href={service.href} className="w-[50px] h-[60px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center group-hover:-rotate-45">
+                  <Link href={service.href} target="_blank" className="w-[50px] h-[60px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center group-hover:-rotate-45">
                     <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>

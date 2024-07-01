@@ -24,7 +24,7 @@ const projects = [
     num: "01",
     category: "frontend",
     title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vel remila.",
+    description: "Wireless Headphones Website - Ecommerce Website - Fully Responsive.",
     stack: [
       { name: "Html 5" },
       { name: "Css 3"},
@@ -32,17 +32,18 @@ const projects = [
     ],
     image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/RaDins-18/Front-End-Web-Projects/tree/main/Headphone%20Website%20Home%20Page",
   },
   {
     num: "02",
     category: "fullstack",
     title: "project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vel remila.",
+    description: "Premium Wood Work Website - Handmade Wood Word - Fully Responsive With Backend.",
     stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css"},
       { name: "Node.js" },
+      { name: "React.js" },
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
     ],
     image: "/assets/work/thumb2.png",
     live: "",
@@ -52,27 +53,126 @@ const projects = [
     num: "03",
     category: "frontend",
     title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vel remila.",
+    description: "Spotify Music Player Clone - Fully Responsive - Functional.",
     stack: [
-      { name: "Next.js" },
-      { name: "Tailwind.css"},
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "Javascript" },
     ],
     image: "/assets/work/thumb3.png",
+    live: "https://radins.freewebhostmost.com/",
+    github: "https://github.com/RaDins-18/Popular-Websites-Clone/tree/main/Spotify%20Music%20Player%20Clone%20Website",
+  },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "project 4",
+    description: "Wordpress Gaming Website - Fully Responsive - Admin Panel With Full Control.",
+    stack: [
+      { name: "Wordpress" },
+      { name: "Elementor"},
+      { name: "Plugins" },
+    ],
+    image: "/assets/work/thumb4.png",
     live: "",
     github: "",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "project 5",
+    description: "Winter Fashion Clothing Website - Ecommerce Website - Fully Responsive.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3"},
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/thumb5.png",
+    live: "",
+    github: "https://github.com/RaDins-18/Front-End-Web-Projects/tree/main/Clothing%20Website%20Home%20Page",
+  },
+  {
+    num: "06",
+    category: "fullstack",
+    title: "project 6",
+    description: "Hiking & Camping Agency Website - Functional - Fully Responsive With Backend.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+    ],
+    image: "/assets/work/thumb6.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "07",
+    category: "frontend",
+    title: "project 7",
+    description: "Love Bird Breeder's Website - Rare Love Birds - Fully Responsive.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3"},
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/thumb7.png",
+    live: "",
+    github: "https://github.com/RaDins-18/Front-End-Web-Projects/tree/main/Love%20Birds%20Expert%20Portfolio%20Website",
+  },
+  {
+    num: "08",
+    category: "fullstack",
+    title: "project 8",
+    description: "Creative UI/UX Designer's Portfolio - Functional - Fully Responsive With Backend.",
+    stack: [
+      { name: "Node.js" },
+      { name: "React.js" },
+      { name: "Next.js" },
+    ],
+    image: "/assets/work/thumb8.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "09",
+    category: "frontend",
+    title: "project 9",
+    description: "RaDin's Perfume Collection Website - Premium Fragrances - Fully Responsive.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3"},
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/thumb9.png",
+    live: "",
+    github: "https://github.com/RaDins-18/Front-End-Web-Projects/tree/main/RaDins%20Perfume%20Website",
+  },
+  {
+    num: "10",
+    category: "frontend",
+    title: "project 10",
+    description: "Creative & Unique Ideas Website - Create Something Creative - Fully Responsive.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3"},
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/thumb10.png",
+    live: "",
+    github: "https://github.com/RaDins-18/Front-End-Web-Projects/tree/main/Creative%20Studio%20Website%20Animated%20Home%20Page",
   },
 ];
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
-
+  
   const handleSlideChange = (swiper) => {
     // get current slide index
     const currentIndex = swiper.activeIndex;
     // update project state based on current slide index
     setProject(projects[currentIndex]);
   };
-
+  
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -84,6 +184,7 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+          {/* project info */}
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
@@ -113,35 +214,39 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live?
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>:""
+                }
                 {/* github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github?
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>:""
+                }
               </div>      
             </div>
           </div>
-
+          {/* project picture with slider */}
           <div className="w-full xl:w-[50%]">
             <Swiper
               spaceBetween={30}
