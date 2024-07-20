@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger , SheetClose } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
@@ -53,7 +53,9 @@ const MobileNav = () => {
                 key={index}
                 className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}
               >
-                {link.name}
+                <SheetClose>
+                  {link.name}
+                </SheetClose>
               </Link>
             );
           })}
