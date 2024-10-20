@@ -91,8 +91,8 @@ const projects = [
       { name: "Javascript" },
     ],
     image: "/assets/work/thumb5.png",
-    live: "https://radins.freewebhostmost.com/",
-    github: "https://github.com/RaDins-18/Popular-Websites-Clone/tree/main/Spotify%20Music%20Player%20Clone%20Website",
+    live: "https://radins-spotify.freewebhostmost.com/",
+    github: "https://github.com/RaDins-18/Spotify-Music-Player-Clone-Website",
   },
   {
     num: "06",
